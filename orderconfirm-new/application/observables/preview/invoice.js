@@ -9,9 +9,9 @@ const initialInvoiceAjax$ = syncInput$
     .map(composeInvoiceModel)
     .take(1);
 
-const triggerInvoiceAjax$ = asyncInput$
+const triggerInvoice$ = asyncInput$
     .ajax(fetchPreviewOrderAPI)
     .map(changeInvoiceAddress)
     .takeUtil(invoiceModuleInput$);
 
-export { initialInvoiceAjax$, triggerInvoiceAjax$ };
+export { initialInvoiceAjax$, triggerInvoice$ };
