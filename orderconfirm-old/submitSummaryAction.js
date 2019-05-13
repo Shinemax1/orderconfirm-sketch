@@ -1,6 +1,6 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-undef */
-// 首次进页面经过的流程触发一级action 1个 级联触发action 总计40+
+// 执行下单动作 dispatch action 1个 级联触发action 总计40+
 // dispatch action总计代码行数（仅计算action中代码）: 1000+
 // lines: 27
 dispatch('submit');
